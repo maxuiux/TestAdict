@@ -13,17 +13,16 @@ html {
 }
 
 body {
-  font-family: var(--font-family-arial);
+  font-family: var(--font-family-inter);
   font-size: rem(16);
   font-weight: 400;
   color: var(--color-white);
   background: var(--color-dark);
   overflow-x: hidden;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // min-height: 100dvh;
-  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
 }
 
 img,
