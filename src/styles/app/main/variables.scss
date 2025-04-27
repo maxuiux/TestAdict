@@ -1,0 +1,30 @@
+:root {
+    --font-family-arial: "Arial", Helvetica, sans-serif;
+    --font-family-prata: "Prata", Helvetica, Arial, sans-serif;
+    
+    --color-white: #fff;
+    --color-black: #000;
+    --color-dark: #222222;
+    --color-gray-dark: #282829;
+    --color-gray: #55565A;
+    --color-sand: #D5C9BE;
+    --color-ocean: #38535D;
+    --color-peach: #EFCFAD;
+    
+    --transition-1: 0.2s;
+    
+    // Слои
+    --zindex-popover: 900;
+    --zindex-dropdown: 1000;
+    --zindex-sidebar: 1010;
+    --zindex-sticky: 1020;
+    --zindex-fixed: 1030;
+    --zindex-modal: 1055;
+    --zindex-tooltip: 1080;
+    --zindex-loader: 2080;
+}
+
+// Разрешения
+$breakpoint-laptop: rem(1596);
+$breakpoint-tablet: rem(1348);
+$breakpoint-mobile: rem(768);

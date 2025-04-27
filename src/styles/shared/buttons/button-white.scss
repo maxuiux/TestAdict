@@ -1,0 +1,24 @@
+.button--color {
+    &-white {
+        background-color: var(--color-white);
+    
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                background-color: var(--color-peach);
+            }
+
+            &:active {
+                background-color:  var(--color-sand);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                background-color:  var(--color-sand);
+            }
+        }
+    }
+}

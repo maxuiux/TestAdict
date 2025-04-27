@@ -1,0 +1,40 @@
+.button {
+    align-self: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(10);
+    font-size: rem(24);
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-color: transparent;
+    border-radius: rem(4);
+    user-select: none;
+    position: relative;
+    transition: var(--transition-1);
+
+    &:hover,
+    &:focus-visible {
+        text-decoration: none;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    @media (hover: none) {
+        &:active {
+            text-decoration: none;
+        }
+    }
+    
+    &--lg {
+        min-height: rem(96);
+        padding: rem(32) rem(50);
+    }
+}

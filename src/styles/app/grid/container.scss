@@ -1,0 +1,11 @@
+.container {
+    max-width: $breakpoint-laptop;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+
+    @include tablet {
+        max-width: $breakpoint-mobile;
+        padding: 0 rem(10);
+    }
+}
