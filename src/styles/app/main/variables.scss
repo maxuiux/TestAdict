@@ -1,5 +1,5 @@
 :root {
-    --font-family-prata: "Inter", Helvetica, Arial, sans-serif;
+    --font-family-inter: "Inter", Helvetica, Arial, sans-serif;
     
     --color-white: #fff;
     --color-black: #000;
@@ -29,6 +29,6 @@
 }
 
 // Разрешения
-$breakpoint-laptop: rem(1596);
+$breakpoint-laptop: rem(1300);
 $breakpoint-tablet: rem(1348);
 $breakpoint-mobile: rem(768);

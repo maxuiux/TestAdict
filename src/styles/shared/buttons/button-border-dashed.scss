@@ -1,0 +1,35 @@
+.button--color {
+    &-border-dashed {
+        font-weight: 200;
+        color: var(--color-black-soft);
+        background-color: transparent;
+        border-width: rem(2);
+        border-style: dashed;
+        border-color: var(--color-black-soft);
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                border-color: transparent;
+                color: var(--color-blue-light);
+                background-color: var(--color-black-soft);
+            }
+
+            &:active {
+                border-color: transparent;
+                color: var(--color-yellow-soft);
+                background-color: var(--color-green-bright);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                border-color: transparent;
+                color: var(--color-yellow-soft);
+                background-color: var(--color-green-bright);
+            }
+        }
+    }
+}

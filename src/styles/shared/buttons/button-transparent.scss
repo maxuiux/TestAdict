@@ -1,0 +1,46 @@
+.button--color {
+    &-transparent {
+        color: var(--color-black-soft);
+        background-color: transparent;
+
+        span {
+            background: linear-gradient(90deg, var(--color-black-soft) 50%, transparent 50%) repeat-x 0 100%;
+            background-size: rem(12) rem(2);
+
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-blue-light);
+                background-color: var(--color-green-bright);
+
+                span {
+                    background: initial;
+                }
+            }
+
+            &:active {
+                color: var(--color-blue-light);
+                background-color: var(--color-green-dark);
+
+                span {
+                    background: initial;
+                }
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-blue-light);
+                background-color: var(--color-green-dark);
+
+                span {
+                    background: initial;
+                }
+            }
+        }
+    }
+}

@@ -12,12 +12,16 @@ html {
   box-sizing: inherit;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
   font-family: var(--font-family-inter);
   font-size: rem(16);
   font-weight: 400;
-  color: var(--color-white);
-  background: var(--color-dark);
+  color: var(--color-black-soft);
+  background: var(--color-blue-light);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -33,13 +37,12 @@ video {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: initial;
 }
 
 button,
 input,
 label {
-  font-family: var(--font-family-montserrat);
   outline: none;
 }
 

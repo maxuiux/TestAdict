@@ -1,0 +1,25 @@
+.button--color {
+    &-black-soft {
+        color: var(--color-blue-light);
+        background-color: var(--color-black-soft);
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                background-color: var(--color-blue-classic);
+            }
+
+            &:active {
+                background-color: var(--color-blue-dark);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                background-color: var(--color-blue-dark);
+            }
+        }
+    }
+}

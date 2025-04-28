@@ -379,96 +379,35 @@ template {
 }
 
 @font-face {
-  font-family: "Arial";
-  src: url("../fonts/Arial/Arial-ItalicMT.eot");
-  src: local("../fonts/Arial/Arial Italic"), local("../fonts/Arial/Arial-ItalicMT"), url("../fonts/Arial/Arial-ItalicMT.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/Arial-ItalicMT.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/Arial-ItalicMT.ttf") format("../fonts/Arial/truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Arial Narrow";
-  src: url("../fonts/Arial/ArialNarrow-Bold.eot");
-  src: local("../fonts/Arial/Arial Narrow Bold"), local("../fonts/Arial/ArialNarrow-Bold"), url("../fonts/Arial/ArialNarrow-Bold.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/ArialNarrow-Bold.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/ArialNarrow-Bold.ttf") format("../fonts/Arial/truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/Arial/Arial-BoldItalicMT.eot");
-  src: local("../fonts/Arial/Arial Bold Italic"), local("../fonts/Arial/Arial-BoldItalicMT"), url("../fonts/Arial/Arial-BoldItalicMT.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/Arial-BoldItalicMT.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/Arial-BoldItalicMT.ttf") format("../fonts/Arial/truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Arial Narrow";
-  src: url("../fonts/Arial/ArialNarrow.eot");
-  src: local("../fonts/Arial/Arial Narrow"), local("../fonts/Arial/ArialNarrow"), url("../fonts/Arial/ArialNarrow.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/ArialNarrow.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/ArialNarrow.ttf") format("../fonts/Arial/truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arial Narrow";
-  src: url("../fonts/Arial/ArialNarrow-Italic.eot");
-  src: local("../fonts/Arial/Arial Narrow Italic"), local("../fonts/Arial/ArialNarrow-Italic"), url("../fonts/Arial/ArialNarrow-Italic.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/ArialNarrow-Italic.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/ArialNarrow-Italic.ttf") format("../fonts/Arial/truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/Arial/ArialMT.eot");
-  src: local("../fonts/Arial/Arial"), local("../fonts/Arial/ArialMT"), url("../fonts/Arial/ArialMT.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/ArialMT.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/ArialMT.ttf") format("../fonts/Arial/truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/Arial/Arial-BoldMT.eot");
-  src: local("../fonts/Arial/Arial Bold"), local("../fonts/Arial/Arial-BoldMT"), url("../fonts/Arial/Arial-BoldMT.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/Arial-BoldMT.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/Arial-BoldMT.ttf") format("../fonts/Arial/truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arial";
-  src: url("../fonts/Arial/Arial-Black.eot");
-  src: local("../fonts/Arial/Arial Black"), local("../fonts/Arial/Arial-Black"), url("../fonts/Arial/Arial-Black.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/Arial-Black.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/Arial-Black.ttf") format("../fonts/Arial/truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Arial Narrow";
-  src: url("../fonts/Arial/ArialNarrow-BoldItalic.eot");
-  src: local("../fonts/Arial/Arial Narrow Bold Italic"), local("../fonts/Arial/ArialNarrow-BoldItalic"), url("../fonts/Arial/ArialNarrow-BoldItalic.eot?#iefix") format("../fonts/Arial/embedded-opentype"), url("../fonts/Arial/ArialNarrow-BoldItalic.woff") format("../fonts/Arial/woff"), url("../fonts/Arial/ArialNarrow-BoldItalic.ttf") format("../fonts/Arial/truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Prata";
-  src: url("../fonts/Prata/Prata-Regular.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 :root {
-  --font-family-arial: "Arial", Helvetica, sans-serif;
-  --font-family-prata: "Prata", Helvetica, Arial, sans-serif;
+  --font-family-inter: "Inter", Helvetica, Arial, sans-serif;
   --color-white: #fff;
   --color-black: #000;
-  --color-dark: #222222;
-  --color-gray-dark: #282829;
-  --color-gray: #55565A;
-  --color-sand: #D5C9BE;
-  --color-ocean: #38535D;
-  --color-peach: #EFCFAD;
-  --transition-1: 0.2s;
+  --color-blue-light: #D5E1E1;
+  --color-black-soft: #252525;
+  --color-orange-bright: #FF6D38;
+  --color-blue-dark: #1B1464;
+  --color-blue-classic: #0000FF;
+  --color-green-bright: #12A720;
+  --color-yellow-soft: #FFF5DA;
+  --color-pink-light: #F79CFF;
+  --color-pink-bright: #ED58DF;
+  --color-green-dark: #0C5238;
+  --color-yellow-bright: #FFFF00;
+  --transition-1: 0.3s;
   --zindex-popover: 900;
   --zindex-dropdown: 1000;
   --zindex-sidebar: 1010;
@@ -492,14 +431,21 @@ html {
   box-sizing: inherit;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
-  font-family: var(--font-family-arial);
+  font-family: var(--font-family-inter);
   font-size: 1rem;
   font-weight: 400;
-  color: var(--color-white);
-  background: var(--color-dark);
+  color: var(--color-black-soft);
+  background: var(--color-blue-light);
   overflow-x: hidden;
-  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
 }
 
 img,
@@ -510,13 +456,12 @@ video {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
+  color: initial;
 }
 
 button,
 input,
 label {
-  font-family: var(--font-family-montserrat);
   outline: none;
 }
 
@@ -557,29 +502,17 @@ svg {
   display: flex;
 }
 
-.section-padding {
-  padding-top: 3.25rem;
-  padding-bottom: 3.25rem;
-}
-
-.title {
-  font-family: var(--font-family-prata);
-  font-size: 5rem;
-  line-height: 120%;
-  font-weight: 400;
-}
-
-.subtitle {
-  font-size: 3.125rem;
-  line-height: 120%;
-  font-weight: 400;
-}
-
 .container {
-  max-width: 99.75rem;
+  max-width: 81.25rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.25rem;
+}
+
+.container-full {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .button {
@@ -587,17 +520,17 @@ svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.625rem;
-  font-size: 1.5rem;
-  line-height: 150%;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  gap: 0.3125rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   text-decoration: none;
   text-decoration-color: transparent;
-  border-radius: 0.25rem;
+  border-radius: 3.75rem;
   user-select: none;
   position: relative;
+  cursor: pointer;
   transition: var(--transition-1);
 }
 
@@ -606,31 +539,56 @@ svg {
   text-decoration: none;
 }
 
-.button--lg {
-  min-height: 6rem;
-  padding: 2rem 3.125rem;
+.button--md {
+  min-height: 3.625rem;
+  padding: 1.1875rem 2rem;
 }
 
-.button--color-white {
-  background-color: var(--color-white);
+.button--xlg {
+  max-width: 39.375rem;
+  width: 100%;
+  min-height: 15.125rem;
+  padding: 1.1875rem 2rem;
+  text-transform: unset;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: -0.01em;
+  border-radius: 18.75rem;
+}
+
+.button--color-transparent {
+  color: var(--color-black-soft);
+  background-color: transparent;
+}
+
+.button--color-transparent span {
+  background: linear-gradient(90deg, var(--color-black-soft) 50%, transparent 50%) repeat-x 0 100%;
+  background-size: 0.75rem 0.125rem;
+}
+
+.button--color-black-soft {
+  color: var(--color-blue-light);
+  background-color: var(--color-black-soft);
+}
+
+.button--color-blue-classic {
+  color: var(--color-yellow-soft);
+  background-color: var(--color-blue-classic);
+}
+
+.button--color-border-dashed {
+  font-weight: 200;
+  color: var(--color-black-soft);
+  background-color: transparent;
+  border-width: 0.125rem;
+  border-style: dashed;
+  border-color: var(--color-black-soft);
 }
 
 @media (max-width: 84.25rem) {
-  .section-padding {
-    padding-top: 2.625rem;
-    padding-bottom: 2.625rem;
-  }
-
   .container {
     max-width: 48rem;
     padding: 0 0.625rem;
-  }
-}
-
-@media (max-width: 48rem) {
-  .section-padding {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 }
 
@@ -647,19 +605,83 @@ svg {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .button--color-white:hover,
-  .button--color-white:focus-visible {
-    background-color: var(--color-peach);
+  .button--color-transparent:hover,
+  .button--color-transparent:focus-visible {
+    color: var(--color-blue-light);
+    background-color: var(--color-green-bright);
   }
 
-  .button--color-white:active {
-    background-color: var(--color-sand);
+  .button--color-transparent:hover span,
+  .button--color-transparent:focus-visible span {
+    background: initial;
+  }
+
+  .button--color-transparent:active {
+    color: var(--color-blue-light);
+    background-color: var(--color-green-dark);
+  }
+
+  .button--color-transparent:active span {
+    background: initial;
+  }
+
+  .button--color-black-soft:hover,
+  .button--color-black-soft:focus-visible {
+    background-color: var(--color-blue-classic);
+  }
+
+  .button--color-black-soft:active {
+    background-color: var(--color-blue-dark);
+  }
+
+  .button--color-blue-classic:hover,
+  .button--color-blue-classic:focus-visible {
+    color: var(--color-blue-dark);
+    background-color: var(--color-orange-bright);
+  }
+
+  .button--color-blue-classic:active {
+    color: var(--color-blue-classic);
+    background-color: var(--color-yellow-bright);
+  }
+
+  .button--color-border-dashed:hover,
+  .button--color-border-dashed:focus-visible {
+    border-color: transparent;
+    color: var(--color-blue-light);
+    background-color: var(--color-black-soft);
+  }
+
+  .button--color-border-dashed:active {
+    border-color: transparent;
+    color: var(--color-yellow-soft);
+    background-color: var(--color-green-bright);
   }
 }
 
 @media (hover: none) and (pointer: coarse) {
-  .button--color-white:active {
-    background-color: var(--color-sand);
+  .button--color-transparent:active {
+    color: var(--color-blue-light);
+    background-color: var(--color-green-dark);
+  }
+
+  .button--color-transparent:active span {
+    background: initial;
+  }
+
+  .button--color-black-soft:active {
+    background-color: var(--color-blue-dark);
+  }
+
+  .button--color-blue-classic:active {
+    color: var(--color-blue-classic);
+    background-color: var(--color-yellow-bright);
+  }
+
+  .button--color-border-dashed:active {
+    border-color: transparent;
+    color: var(--color-yellow-soft);
+    background-color: var(--color-green-bright);
   }
 }
 /*# sourceMappingURL=maps/index.min.css.map */

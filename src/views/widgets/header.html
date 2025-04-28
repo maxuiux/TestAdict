@@ -1,0 +1,31 @@
+<header class="header">
+    <div class="container">
+        @@include("widgets/header-logo.html")
+
+        <h1 class="header-title">
+            Figma&rsquo;s conference for people
+            who build products
+        </h1>
+
+        <div class="header-buttons">
+            @@include("shared/buttons/button.html", {
+                "tag":"a",
+                "href":"href='/speakers'",
+                "type":"",
+                "size":"md",
+                "color":"transparent",
+                "title":"Speakers",
+                "attribute":"",
+            })
+            @@include("shared/buttons/button.html", {
+                "tag":"a",
+                "href":"href='/registration'",
+                "type":"",
+                "size":"md",
+                "color":"black-soft",
+                "title":"Get tickets",
+                "attribute":"",
+            })
+        </div>
+    </div>
+</header>
