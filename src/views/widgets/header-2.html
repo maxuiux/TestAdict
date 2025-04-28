@@ -1,0 +1,27 @@
+<header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            @@include("widgets/header-logo.html")
+            <div class="header__buttons">
+                @@include("shared/buttons/button.html", {
+                    "tag":"a",
+                    "href":"href='/speakers'",
+                    "type":"",
+                    "size":"md",
+                    "color":"transparent",
+                    "title":"Speakers",
+                    "attribute":"",
+                })
+                @@include("shared/buttons/button.html", {
+                    "tag":"a",
+                    "href":"href='/registration'",
+                    "type":"",
+                    "size":"md",
+                    "color":"black-soft",
+                    "title":"Get tickets",
+                    "attribute":"",
+                })
+            </div>
+        </div>
+    </div>
+</header>

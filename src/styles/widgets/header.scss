@@ -9,6 +9,8 @@
     }
 
     &__logo {
+        transition: var(--transition-1);
+
         svg {
             max-width: rem(206);
             width: auto;

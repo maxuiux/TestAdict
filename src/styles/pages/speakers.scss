@@ -1,0 +1,87 @@
+.body-speakers {
+    color: var(--color-yellow-soft);
+    background-color: var(--color-green-dark);
+
+    .header__logo {
+        color: var(--color-yellow-soft);
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-yellow-bright);
+            }
+
+            &:active {
+                color: var(--color-orange-bright);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-orange-bright);
+            }
+        }
+    }
+
+    .button {
+        &--color-transparent {
+            color: var(--color-yellow-soft);
+        }
+
+        &--color-black-soft {
+            color: var(--color-black-soft);
+            background-color: var(--color-yellow-soft);
+
+            @media (hover: hover) and (pointer: fine) {
+
+                &:hover,
+                &:focus-visible {
+                    background-color: var(--color-pink-bright);
+                }
+
+                &:active {
+                    background-color: var(--color-yellow-bright);
+                }
+            }
+
+            @media (hover: none) and (pointer: coarse) {
+
+                &:active {
+                    background-color: var(--color-yellow-bright);
+                }
+            }
+        }
+
+        &--color-border-dashed {
+            color: var(--color-yellow-soft);
+            border-color: var(--color-yellow-soft);
+            
+            @media (hover: hover) and (pointer: fine) {
+
+                &:hover,
+                &:focus-visible {
+                    border-color: transparent;
+                    color: var(--color-blue-dark);
+                    background-color: var(--color-orange-bright);
+                }
+    
+                &:active {
+                    border-color: transparent;
+                    color: var(--color-green-bright);
+                    background-color: var(--color-yellow-bright);
+                }
+            }
+    
+            @media (hover: none) and (pointer: coarse) {
+    
+                &:active {
+                    border-color: transparent;
+                    color: var(--color-yellow-soft);
+                    background-color: var(--color-green-bright);
+                }
+            }
+        }
+    }
+}

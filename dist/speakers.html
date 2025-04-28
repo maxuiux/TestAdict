@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Тестовое задание MST</title>
+
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/img/favicon.webp" type="image/webp">
+  <link rel="icon" href="/img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/index.min.css">
+</head>
+
+<body class="body-speakers">
+    <header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <a href="/" class="header__logo">
+    <svg>
+        <use href="img/sprites/icon.svg#logo"></use>
+    </svg>
+</a>
+            <div class="header__buttons">
+                <a  href='/speakers' class="button button--md button--color-transparent" >
+    <span>
+        Speakers
+    </span>
+</a>
+                <a  href='/registration' class="button button--md button--color-black-soft" >
+    <span>
+        Get tickets
+    </span>
+</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+
+        <section class="speakers">
+    <div class="container">
+        <div class="speakers__blocks">
+            <div class="speakers__block speakers__block--info">
+                <h2 class="title">
+    <svg>
+        <use href="img/sprites/icon.svg#asterisk"></use>
+    </svg>
+    <span>
+        the lineup
+    </span>
+</h2>
+                <p class="text">
+    More than 75&nbsp;speakers from around the globe will join&nbsp;us at&nbsp;Config 2024 to&nbsp;share how they&rsquo;re thinking, what they&rsquo;re making, and what&rsquo;s next.
+</p>
+
+                <p class="subtext">
+    Attendees will leave feeling more connected to&nbsp;a community of&nbsp;builders and to&nbsp;the future of&nbsp;product development.
+</p>
+            </div>
+            <div class="speakers__block speakers__block--items">
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-01.avif" type="image/avif">
+                <source srcset="img/speaker-img-01.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Jesper Kouthoofd
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Head of&nbsp;Design &amp;&nbsp;Chief Executive Officer at&nbsp;Teenage Engineering
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-02.avif" type="image/avif">
+                <source srcset="img/speaker-img-02.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Karla Mickens Cole
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Product Designer &amp;&nbsp;Brand Lead at&nbsp;The Browser Company
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-03.avif" type="image/avif">
+                <source srcset="img/speaker-img-03.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Jenny Arden
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Chief Design Officer at&nbsp;Zillow
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-04.avif" type="image/avif">
+                <source srcset="img/speaker-img-04.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Imran Chaudhri
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                President &amp;&nbsp;Chief Designer at&nbsp;Humane
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-05.avif" type="image/avif">
+                <source srcset="img/speaker-img-05.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Refik Anadol
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Director at&nbsp;Refik Anadol Studios
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-06.avif" type="image/avif">
+                <source srcset="img/speaker-img-06.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Neha Batra
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Vice President of&nbsp;Engineering at&nbsp;Github
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-07.avif" type="image/avif">
+                <source srcset="img/speaker-img-07.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Alexis Palmer
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Comedian
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-08.avif" type="image/avif">
+                <source srcset="img/speaker-img-08.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Josh Wardle
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Artist &amp;&nbsp;Software Engineer at&nbsp;Gremco Industries, Creator of&nbsp;Wordle
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-09.avif" type="image/avif">
+                <source srcset="img/speaker-img-09.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Aravind Srinivas
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Chief Executive Officer &amp;&nbsp;Co-Founder at perplexity.ai
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-10.avif" type="image/avif">
+                <source srcset="img/speaker-img-10.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Jessica Hische
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Lettering Artist at&nbsp;Jessica Hische Inc.
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-11.avif" type="image/avif">
+                <source srcset="img/speaker-img-11.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Claire Vo
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Chief Product Officer at&nbsp;LaunchDarkly
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-12.avif" type="image/avif">
+                <source srcset="img/speaker-img-12.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Lenny Rachitsky
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Author at&nbsp;Lenny&rsquo;s Podcast // Lenny&rsquo;s Newsletter
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-13.avif" type="image/avif">
+                <source srcset="img/speaker-img-13.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Regin&eacute; Gilbert
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                James Weldon Johnson Professor at&nbsp;New York University
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-14.avif" type="image/avif">
+                <source srcset="img/speaker-img-14.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Andy Allen
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Software Designer at !Boring
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-15.avif" type="image/avif">
+                <source srcset="img/speaker-img-15.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Jason Ballard
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                CEO &amp;&nbsp;Co-founder at&nbsp;ICON
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-16.avif" type="image/avif">
+                <source srcset="img/speaker-img-16.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Saron Yitbarek
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Creator at&nbsp;Not A&nbsp;Designer
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-17.avif" type="image/avif">
+                <source srcset="img/speaker-img-17.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Hongyi Li
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Director at&nbsp;Open Government Products
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-18.avif" type="image/avif">
+                <source srcset="img/speaker-img-18.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Diana Mounter
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Head of&nbsp;Design at&nbsp;Github
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-19.avif" type="image/avif">
+                <source srcset="img/speaker-img-19.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Kevin Systrom
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Former CEO at&nbsp;Instagram, CEO at Artifact
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-20.avif" type="image/avif">
+                <source srcset="img/speaker-img-20.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Oliver Sommermann
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                User Researcher at&nbsp;Ableton
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-21.avif" type="image/avif">
+                <source srcset="img/speaker-img-21.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Pablo S&aacute;nchez
+            </div>
+            <div class="speakers-item__gen">
+                he/him
+            </div>
+            <div class="speakers-item__post">
+                Principal Designer at&nbsp;Ableton
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-22.avif" type="image/avif">
+                <source srcset="img/speaker-img-22.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Ovetta Sampson
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Director of&nbsp;UX&nbsp;Machine Learning at Google
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-23.avif" type="image/avif">
+                <source srcset="img/speaker-img-23.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Mike Stern
+            </div>
+            <div class="speakers-item__gen">
+                He/him
+            </div>
+            <div class="speakers-item__post">
+                Design Evangelism Manager at&nbsp;Apple
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="speakers-item">
+    <div class="speakers-item__blocks">
+        <div class="speakers-item__img">
+            <picture>
+                <source srcset="img/speaker-img-24.avif" type="image/avif">
+                <source srcset="img/speaker-img-24.webp" type="image/webp">
+                <img src="img/speaker-img-@img.jpg" loading="lazy" alt="image">
+            </picture>
+        </div>
+        <div class="speakers-item__info">
+            <div class="speakers-item__name">
+                Linda Dong
+            </div>
+            <div class="speakers-item__gen">
+                she/her
+            </div>
+            <div class="speakers-item__post">
+                Design Evangelist at&nbsp;Apple
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="speakers__block speakers__block--button">
+                <button type='button' Linda Dong class="button button--md button--color-border-dashed" >
+    <span>
+        load more
+    </span>
+</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer-decoration footer-decoration--2"></div>
+    <div class="container">
+        <div class="footer__blocks">
+            <div class="footer__block footer__block--main">
+                <a href="/" class="footer__logo">
+                    <svg>
+                        <use href="img/sprites/icon.svg#logo-figma"></use>
+                    </svg>
+                </a>
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <h3 class="footer__title">
+                            Menu
+                        </h3>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li>
+                                    <a href="/speakers">
+                                        <span>Speakers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registration">
+                                        <span>Get tickets</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">
+                            Resources
+                        </h3>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>Why attend</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>FAQ</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>Sponsors</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>Hotels</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>Visa letters</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>Code of conduct</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">
+                            Follow
+                        </h3>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>X</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>LinkedIn</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>nelzyagram</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <span>YouTube</span>
+                                        <sup>↗</sup>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block footer__block--logo">
+                <svg>
+                    <use href="img/sprites/icon.svg#logo"></use>
+                </svg>
+            </div>
+            <div class="footer__block footer__block--copyright">
+                <button type='button'  class="button button--sm button--color-text" >
+    <svg>
+        <use href="img/sprites/icon.svg#world"></use>
+    </svg>
+    <span>
+        English
+    </span>
+</button>
+                <span>↓</span>
+                <button type='button'  class="button button--sm button--color-text" >
+    <span>
+        Cookie settings
+    </span>
+</button>
+                <span>/</span>
+                <span>
+                    © Figma <span id="year"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="js/index.min.js"></script>
+
+</body>
+
+</html>
