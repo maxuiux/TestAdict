@@ -1,0 +1,26 @@
+.button--color {
+    &-text {
+        color: var(--color-blue-light);
+        background-color: transparent;
+        text-transform: unset;
+
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-orange-bright);
+            }
+
+            &:active {
+                color: var(--color-yellow-bright);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-yellow-bright);
+            }
+        }
+    }
+}

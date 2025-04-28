@@ -1,0 +1,169 @@
+.footer {
+    color: var(--color-blue-light);
+    background-color: var(--color-black-soft);
+    padding: rem(96) 0 rem(34) 0;
+    position: relative;
+
+    &-decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        height: rem(16);
+
+        &--1 {
+            background: linear-gradient(to right,
+                    var(--color-blue-classic) 0%,
+                    var(--color-blue-classic) 6.25%,
+                    var(--color-pink-bright) 6.25%,
+                    var(--color-pink-bright) 25%,
+                    var(--color-blue-classic) 25%,
+                    var(--color-blue-classic) 29.1667%,
+                    var(--color-pink-bright) 29.1667%,
+                    var(--color-pink-bright) 47.9167%,
+                    var(--color-blue-classic) 47.9167%,
+                    var(--color-blue-classic) 52.0834%,
+                    var(--color-pink-bright) 52.0834%,
+                    var(--color-pink-bright) 70.8334%,
+                    var(--color-blue-classic) 70.8334%,
+                    var(--color-blue-classic) 74.9999%,
+                    var(--color-pink-bright) 74.9999%,
+                    var(--color-pink-bright) 93.7499%,
+                    var(--color-blue-classic) 93.7499%,
+                    var(--color-blue-classic) 100%);
+        }
+
+        &--2 {
+            background: linear-gradient(to right,
+                    var(--color-blue-classic) 0%,
+                    var(--color-blue-classic) 6.25%,
+                    var(--color-pink-bright) 6.25%,
+                    var(--color-pink-bright) 48.9583%,
+                    var(--color-blue-classic) 48.9583%,
+                    var(--color-blue-classic) 53.125%,
+                    var(--color-pink-bright) 53.125%,
+                    var(--color-pink-bright) 95.8333%,
+                    var(--color-blue-classic) 95.8333%,
+                    var(--color-blue-classic) 100%);
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__block {
+        &--main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: rem(24);
+            margin-bottom: rem(80);
+        }
+
+        &--logo {
+            margin-bottom: rem(12);
+
+            svg {
+                max-width: rem(1260);
+                width: 100%;
+                height: rem(246);
+            }
+        }
+
+        &--copyright {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: rem(16);
+
+        }
+    }
+
+    &__logo {
+        display: flex;
+        color: var(--color-blue-light);
+
+        svg {
+            width: rem(120);
+            height: rem(43);
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: rem(60);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: rem(28);
+        font-size: clamp(13px, 2vw, 15px);
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+
+    &__nav {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: rem(12);
+
+            a {
+                color: var(--color-blue-light);
+                text-decoration: underline dashed rem(2);
+                text-underline-offset: rem(4);
+                position: relative;
+                transition: var(--transition-1);
+                padding: rem(6) 0;
+
+                sup {
+                    position: absolute;
+                    top: rem(7);
+                    right: rem(-15);
+                    font-weight: 300;
+                    transition: inherit;
+                }
+
+                @media (hover: hover) and (pointer: fine) {
+
+                    &:hover,
+                    &:focus-visible {
+                        color: var(--color-blue-light);
+                        background-color: var(--color-green-bright);
+
+                        sup {
+                            color: var(--color-green-bright);
+                        }
+                    }
+
+                    &:active {
+                        color: var(--color-blue-light);
+                        background-color: var(--color-green-dark);
+
+                        sup {
+                            color: var(--color-green-dark);
+                        }
+                    }
+                }
+
+                @media (hover: none) and (pointer: coarse) {
+
+                    &:active {
+                        color: var(--color-blue-light);
+                        background-color: var(--color-green-dark);
+
+                        sup {
+                            color: var(--color-green-dark);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

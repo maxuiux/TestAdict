@@ -1,0 +1,37 @@
+.sponsors {
+    color: var(--color-black-soft);
+    background-color: var(--color-yellow-soft);
+
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(48) rem(60);
+        margin-bottom: rem(40);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-beige-light);
+        padding: rem(12);
+        max-height: rem(180);
+
+        svg {
+            max-width: rem(160);
+            width: 100%;
+            height: rem(160);
+        }
+    }
+
+    &__info {
+        max-width: rem(660);
+        width: 100%;
+    }
+    
+    &__items {
+        .button {
+            align-self: center;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.header-info {
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+    }
+
+    &__icon {
+        svg {
+            width: rem(12);
+            height: rem(12);
+        }
+    }
+
+    &__text {
+        display: grid;
+        grid-template-columns: repeat(2, rem(180));
+        font-size: clamp(rem(10), 2vw, rem(16));
+        line-height: 135%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+    }
+}

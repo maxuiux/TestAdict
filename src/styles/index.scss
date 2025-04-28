@@ -17,11 +17,17 @@
 // components
 // --slider
 @import "components/header-info";
+@import "components/anim-logo";
+@import "components/video";
+@import "components/join-us";
+@import "components/the-lineup";
+@import "components/sponsors";
 
 // widgets
 // --header
 @import "widgets/header";
-@import "widgets/menu";
+@import "widgets/footer";
+// @import "widgets/menu";
 
 // shared
 // --buttons
@@ -30,3 +36,4 @@
 @import "shared/buttons/button-black-soft";
 @import "shared/buttons/button-blue-classic";
 @import "shared/buttons/button-border-dashed";
+@import "shared/buttons/button-text";

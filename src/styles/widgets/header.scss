@@ -1,0 +1,38 @@
+.header {
+    padding: rem(24) 0;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(10);
+    }
+
+    &__logo {
+        svg {
+            max-width: rem(206);
+            width: auto;
+            height: rem(38);
+        }
+    }
+
+    &__title {
+        font-size: clamp(rem(10), 2vw, rem(16));
+        line-height: 135%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        max-width: rem(280);
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: rem(8) 0;
+    }
+
+    &--color-yellow-soft {
+        .header__logo {
+            color: var(--color-yellow-soft);
+        }
+    }
+}

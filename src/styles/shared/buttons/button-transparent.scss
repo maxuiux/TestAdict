@@ -4,9 +4,8 @@
         background-color: transparent;
 
         span {
-            background: linear-gradient(90deg, var(--color-black-soft) 50%, transparent 50%) repeat-x 0 100%;
-            background-size: rem(12) rem(2);
-
+            text-decoration: underline dashed rem(2);
+            text-underline-offset: rem(4);
         }
 
         @media (hover: hover) and (pointer: fine) {
@@ -15,19 +14,11 @@
             &:focus-visible {
                 color: var(--color-blue-light);
                 background-color: var(--color-green-bright);
-
-                span {
-                    background: initial;
-                }
             }
 
             &:active {
                 color: var(--color-blue-light);
                 background-color: var(--color-green-dark);
-
-                span {
-                    background: initial;
-                }
             }
         }
 
@@ -36,10 +27,6 @@
             &:active {
                 color: var(--color-blue-light);
                 background-color: var(--color-green-dark);
-
-                span {
-                    background: initial;
-                }
             }
         }
     }

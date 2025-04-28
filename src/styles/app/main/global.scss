@@ -1,0 +1,26 @@
+.section {
+    padding: rem(80) 0;
+
+    &__blocks {
+        display: grid;
+        gap: rem(64);
+
+        &--grid-hor-2 {
+            grid-template-columns: rem(420) 1fr;
+
+            .section__block {
+                justify-content: flex-end;
+                
+                .button--xlg {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+    }
+}

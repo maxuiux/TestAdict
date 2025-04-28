@@ -20,28 +20,24 @@
 <body>
   <header class="header">
     <div class="container">
-        <a href="/" class="header-logo">
-    <svg>
-        <use href="img/sprites/icon.svg#logo"></use>
-    </svg>
-</a>
-
-        <h1 class="header-title">
-            Figma&rsquo;s conference for people
-            who build products
-        </h1>
-
-        <div class="header-buttons">
-            <a  href='/speakers' class="button button--md button--color-transparent" >
+        <div class="header__wrap">
+            
+            <h1 class="header__title">
+                Figma&rsquo;s conference for people
+                who build products
+            </h1>
+            <div class="header__buttons">
+                <a  href='/speakers' class="button button--md button--color-transparent" >
     <span>
         Speakers
     </span>
 </a>
-            <a  href='/registration' class="button button--md button--color-black-soft" >
+                <a  href='/registration' class="button button--md button--color-black-soft" >
     <span>
         Get tickets
     </span>
 </a>
+            </div>
         </div>
     </div>
 </header>
@@ -50,26 +46,31 @@
 
     <section class="header-info">
     <div class="container">
-        <div class="header-info__text">
-            <p>
-                June 26-27
-                2024
-            </p>
-            <p>
-                Moscone Center
-                San Francisco, CA
-            </p>
+        <div class="header-info__wrap">
+            <div class="header-info__icon">
+                <svg>
+                    <use href="img/sprites/icon.svg#rhombus"></use>
+                </svg>
+            </div>
+            <div class="header-info__text">
+                <p>
+                    June 26-27<br>
+                    2024
+                </p>
+                <p>
+                    Moscone Center
+                    San Francisco, CA
+                </p>
+            </div>
         </div>
     </div>
 </section>
     <section class="anim-logo">
     <div class="container">
         <div class="anim-logo__wrap">
-            <a href="/" class="header-logo">
-    <svg>
-        <use href="img/sprites/icon.svg#logo"></use>
-    </svg>
-</a>
+            <svg>
+                <use href="img/sprites/icon.svg#logo"></use>
+            </svg>
         </div>
     </div>
 </section>
@@ -86,7 +87,7 @@
     
     <section class="section join-us">
     <div class="container">
-        <div class="section__blocks">
+        <div class="section__blocks section__blocks--grid-hor-2">
             <div class="section__block">
                 <h2 class="title">
     <svg>
@@ -99,7 +100,7 @@
                 <h3 class="subtitle">
     Early bird tickets available now
 </h3>
-                <p class="subtext">
+                <p class="text">
     Register now to&nbsp;save&nbsp;50% and be the first to&nbsp;reserve a&nbsp;seat at&nbsp;the most popular talks.
 </p>
             </div>
@@ -115,7 +116,7 @@
 </section>
     <section class="section the-lineup">
     <div class="container">
-        <div class="section__blocks">
+        <div class="section__blocks section__blocks--grid-hor-2">
             <div class="section__block">
                 <h2 class="title">
     <svg>
@@ -125,7 +126,7 @@
         The lineup
     </span>
 </h2>
-                <p class="subtext">
+                <p class="text">
     2024 will be&nbsp;the most exciting Config yet, with programming designed to connect a&nbsp;dynamic community of builders to&nbsp;the future of&nbsp;product development.
 </p>
                 <a  href='/registration' class="button button--md button--color-border-dashed" >
@@ -153,7 +154,7 @@
     <section class="section sponsors">
     <div class="container">
         <div class="section__blocks">
-            <div class="section__block">
+            <div class="section__block sponsors__info">
                 <h2 class="title">
     <svg>
         <use href="img/sprites/icon.svg#hourglass"></use>
@@ -165,42 +166,58 @@
                 <h3 class="subtitle">
     Thank you to&nbsp;our sponsors
 </h3>
-                <p class="subtext">
+                <p class="text">
     We&rsquo;re excited to&nbsp;bring you an&nbsp;incredible Config experience, made possible by&nbsp;the support of&nbsp;our sponsors.
 </p>
             </div>
-            <div class="section__block">
+            <div class="section__block sponsors__items">
                 <div class="sponsors__blocks">
                     <div class="sponsors__block">
-                            Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-1"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-2"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-3"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-4"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-5"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-6"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-7"></use>
+                        </svg>
                     </div>
                     <div class="sponsors__block">
-                        Тест
+                        <svg>
+                            <use href="img/sprites/vector.svg#sponsors-logo-8"></use>
+                        </svg>
                     </div>
                 </div>
-                <button button  class="button button--md button--color-border-dashed" >
+                <a  href='#' class="button button--md button--color-border-dashed" >
     <span>
         See all sponsors
     </span>
-</button>
+</a>
             </div>
         </div>
     </div>
@@ -209,6 +226,7 @@
   </main>
 
   <footer class="footer">
+    <div class="footer-decoration footer-decoration--1"></div>
     <div class="container">
         <div class="footer__blocks">
             <div class="footer__block footer__block--main">
@@ -226,12 +244,12 @@
                             <ul class="footer__nav-list">
                                 <li>
                                     <a href="/speakers">
-                                        Speakers
+                                        <span>Speakers</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/registration">
-                                        Get tickets
+                                        <span>Get tickets</span>
                                     </a>
                                 </li>
                             </ul>
@@ -244,33 +262,39 @@
                         <nav class="footer__nav">
                             <ul class="footer__nav-list">
                                 <li>
-                                    <a href="#">
-                                        Why attend
+                                    <a href="#" target="_blank">
+                                        <span>Why attend</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        FAQ
+                                    <a href="#" target="_blank">
+                                        <span>FAQ</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Sponsors
+                                    <a href="#" target="_blank">
+                                        <span>Sponsors</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Hotels
+                                    <a href="#" target="_blank">
+                                        <span>Hotels</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Visa letters
+                                    <a href="#" target="_blank">
+                                        <span>Visa letters</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Code of conduct
+                                    <a href="#" target="_blank">
+                                        <span>Code of conduct</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                             </ul>
@@ -283,23 +307,27 @@
                         <nav class="footer__nav">
                             <ul class="footer__nav-list">
                                 <li>
-                                    <a href="#">
-                                        X
+                                    <a href="#" target="_blank">
+                                        <span>X</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        LinkedIn
+                                    <a href="#" target="_blank">
+                                        <span>LinkedIn</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        nelzyagram
+                                    <a href="#" target="_blank">
+                                        <span>nelzyagram</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        YouTube
+                                    <a href="#" target="_blank">
+                                        <span>YouTube</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                             </ul>
@@ -313,7 +341,24 @@
                 </svg>
             </div>
             <div class="footer__block footer__block--copyright">
-                ↓
+                <button type='button'  class="button button--sm button--color-text" >
+    <svg>
+        <use href="img/sprites/icon.svg#world"></use>
+    </svg>
+    <span>
+        English
+    </span>
+</button>
+                <span>↓</span>
+                <button type='button'  class="button button--sm button--color-text" >
+    <span>
+        Cookie settings
+    </span>
+</button>
+                <span>/</span>
+                <span>
+                    © Figma <span id="year"></span>
+                </span>
             </div>
         </div>
     </div>

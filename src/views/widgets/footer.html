@@ -1,4 +1,5 @@
 <footer class="footer">
+    <div class="footer-decoration footer-decoration--1"></div>
     <div class="container">
         <div class="footer__blocks">
             <div class="footer__block footer__block--main">
@@ -16,12 +17,12 @@
                             <ul class="footer__nav-list">
                                 <li>
                                     <a href="/speakers">
-                                        Speakers
+                                        <span>Speakers</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/registration">
-                                        Get tickets
+                                        <span>Get tickets</span>
                                     </a>
                                 </li>
                             </ul>
@@ -34,33 +35,39 @@
                         <nav class="footer__nav">
                             <ul class="footer__nav-list">
                                 <li>
-                                    <a href="#">
-                                        Why attend
+                                    <a href="#" target="_blank">
+                                        <span>Why attend</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        FAQ
+                                    <a href="#" target="_blank">
+                                        <span>FAQ</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Sponsors
+                                    <a href="#" target="_blank">
+                                        <span>Sponsors</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Hotels
+                                    <a href="#" target="_blank">
+                                        <span>Hotels</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Visa letters
+                                    <a href="#" target="_blank">
+                                        <span>Visa letters</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Code of conduct
+                                    <a href="#" target="_blank">
+                                        <span>Code of conduct</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                             </ul>
@@ -73,23 +80,27 @@
                         <nav class="footer__nav">
                             <ul class="footer__nav-list">
                                 <li>
-                                    <a href="#">
-                                        X
+                                    <a href="#" target="_blank">
+                                        <span>X</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        LinkedIn
+                                    <a href="#" target="_blank">
+                                        <span>LinkedIn</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        nelzyagram
+                                    <a href="#" target="_blank">
+                                        <span>nelzyagram</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        YouTube
+                                    <a href="#" target="_blank">
+                                        <span>YouTube</span>
+                                        <sup>↗</sup>
                                     </a>
                                 </li>
                             </ul>
@@ -103,7 +114,30 @@
                 </svg>
             </div>
             <div class="footer__block footer__block--copyright">
-                ↓
+                @@include("shared/buttons/button-icon.html", {
+                "tag":"button",
+                "href":"",
+                "type":"type='button'",
+                "size":"sm",
+                "color":"text",
+                "title":"English",
+                "attribute":"",
+                "icon":"icon.svg#world",
+                })
+                <span>↓</span>
+                @@include("shared/buttons/button.html", {
+                "tag":"button",
+                "href":"",
+                "type":"type='button'",
+                "size":"sm",
+                "color":"text",
+                "title":"Cookie settings",
+                "attribute":"",
+                })
+                <span>/</span>
+                <span>
+                    © Figma <span id="year"></span>
+                </span>
             </div>
         </div>
     </div>

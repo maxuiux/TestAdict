@@ -1,10 +1,10 @@
 .button {
-    align-self: auto;
+    align-self: baseline;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: rem(5);
-    font-size: rem(16);
+    gap: rem(8);
+    font-size: clamp(rem(10), 2vw, rem(16));
     font-weight: 400;
     letter-spacing: -0.01em;
     text-transform: uppercase;
@@ -33,6 +33,13 @@
         }
     }
 
+    &--sm {
+        svg {
+            width: rem(12);
+            height: rem(12);
+        }
+    }
+
     &--md {
         min-height: rem(58);
         padding: rem(19) rem(32);
@@ -45,7 +52,7 @@
         padding: rem(19) rem(32);
         text-transform: unset;
         font-size: rem(48);
-        font-weight: 200;
+        font-weight: 300;
         letter-spacing: -0.01em;
         border-radius: rem(300);
     }
