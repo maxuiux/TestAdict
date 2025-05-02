@@ -16,6 +16,25 @@
             width: auto;
             height: rem(38);
         }
+        
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-orange-bright);
+            }
+
+            &:active {
+                color: var(--color-blue-classic);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                color: var(--color-blue-classic);
+            }
+        }
     }
 
     &__title {

@@ -1,0 +1,140 @@
+.button-ticket {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24) 0;
+    padding: rem(34) rem(32);
+    border-radius: rem(8);
+    border-width: rem(2);
+    border-style: dashed;
+    border-color: var(--color-black-soft);
+    transition: var(--transition-1);
+
+    &__title {
+        font-size: clamp(rem(16), 6vw, rem(48));
+        font-weight: 300;
+        letter-spacing: -0.01em;
+    }
+
+    &__text {
+        font-size: clamp(rem(12), 3vw, rem(24));
+        line-height: 132%;
+        font-weight: 300;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+        font-size: clamp(rem(12), 3vw, rem(24));
+        font-weight: 400;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 rem(10);
+        }
+    }
+
+    &__discount {
+        text-decoration: line-through;
+    }
+
+    &__price {
+        font-size: clamp(rem(12), 3vw, rem(22));
+        line-height: 138%;
+        font-weight: 700;
+    }
+
+    &__booking {
+        line-height: 142%;
+        font-weight: 300;
+    }
+
+    &__offer {
+        font-size: clamp(rem(10), 2vw, rem(16));
+    }
+
+    &__free {
+        line-height: 130%;
+        font-weight: 700;
+    }
+
+    &--hover-color-1 {
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-blue-light);
+                background-color: var(--color-blue-classic);
+                border-color: var(--color-blue-classic);
+            }
+
+            &:active {
+                background-color: var(--color-orange-bright);
+                border-color: var(--color-orange-bright);
+                color: var(--color-blue-classic);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                background-color: var(--color-orange-bright);
+                border-color: var(--color-orange-bright);
+            }
+        }
+    }
+
+    &--hover-color-2 {
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-yellow-soft);
+                background-color: var(--color-orange-bright);
+                border-color: var(--color-orange-bright);
+            }
+
+            &:active {
+                background-color: var(--color-green-bright);
+                border-color: var(--color-green-bright);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                background-color: var(--color-green-bright);
+                border-color: var(--color-green-bright);
+            }
+        }
+    }
+
+    &--hover-color-3 {
+        @media (hover: hover) and (pointer: fine) {
+
+            &:hover,
+            &:focus-visible {
+                color: var(--color-yellow-soft);
+                background-color: var(--color-green-bright);
+                border-color: var(--color-green-bright);
+            }
+
+            &:active {
+                color: var(--color-blue-dark);
+                background-color: var(--color-yellow-bright);
+                border-color: var(--color-yellow-bright);
+            }
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+
+            &:active {
+                background-color: var(--color-yellow-bright);
+                border-color: var(--color-yellow-bright);
+                color: var(--color-blue-dark);
+            }
+        }
+    }
+}

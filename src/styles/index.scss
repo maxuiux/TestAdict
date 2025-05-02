@@ -23,6 +23,8 @@
 @import "components/the-lineup";
 @import "components/sponsors";
 @import "components/speakers";
+@import "components/registration";
+@import "components/registration-item";
 
 // widgets
 // --header
@@ -38,6 +40,7 @@
 @import "shared/buttons/button-blue-classic";
 @import "shared/buttons/button-border-dashed";
 @import "shared/buttons/button-text";
+@import "shared/buttons/registration/button-ticket";
 // --cards
 @import "shared/cards/speakers-item";
 

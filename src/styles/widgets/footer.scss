@@ -48,6 +48,20 @@
                     var(--color-blue-classic) 95.8333%,
                     var(--color-blue-classic) 100%);
         }
+
+        &--3 {
+            background: linear-gradient(to right,
+                    var(--color-green-bright) 0%,
+                    var(--color-green-bright) 6.25%,
+                    var(--color-yellow-bright) 6.25%,
+                    var(--color-yellow-bright) 25.1389%,
+                    var(--color-green-bright) 25.1389%,
+                    var(--color-green-bright) 27.9167%,
+                    var(--color-yellow-bright) 27.9167%,
+                    var(--color-yellow-bright) 93.75%,
+                    var(--color-green-bright) 93.75%,
+                    var(--color-green-bright) 100%);
+        }
     }
 
     &__blocks {

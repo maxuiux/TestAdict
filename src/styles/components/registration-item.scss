@@ -1,0 +1,28 @@
+.registration-items {
+    display: flex;
+    flex-direction: column;
+    gap: rem(64);
+}
+
+.registration-item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+    }
+
+    &__text {
+        font-size: clamp(rem(16), 3vw, rem(32));
+        line-height: 132%;
+        font-weight: 300;
+
+        u {
+            text-decoration: underline solid rem(2);
+            text-underline-offset: 0.25rem;
+        }
+    }
+}
