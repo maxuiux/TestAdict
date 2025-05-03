@@ -536,7 +536,7 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: clamp(0.625rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   font-weight: 300;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -549,19 +549,19 @@ svg {
 }
 
 .subtitle {
-  font-size: clamp(1rem, 6vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 3rem);
   font-weight: 300;
   letter-spacing: -0.01em;
 }
 
 .text {
-  font-size: clamp(0.75rem, 4vw, 1.5rem);
+  font-size: clamp(1.125rem, 4vw, 1.5rem);
   line-height: 132%;
   font-weight: 300;
 }
 
 .subtext {
-  font-size: clamp(0.625rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.01em;
@@ -714,7 +714,7 @@ svg {
 .registration__blocks {
   display: grid;
   grid-template-columns: 12.5rem 1fr;
-  gap: 0 6.771vw;
+  gap: 6.771vw;
 }
 
 .registration__info {
@@ -743,7 +743,7 @@ svg {
 }
 
 .registration-item__text {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   line-height: 132%;
   font-weight: 300;
 }
@@ -769,9 +769,9 @@ svg {
 }
 
 .header__logo svg {
-  max-width: 12.875rem;
+  max-width: clamp(8.125rem, 20vw, 13.5rem);
   width: auto;
-  height: 2.375rem;
+  height: clamp(1.25rem, 20vw, 2.375rem);
 }
 
 .header__title {
@@ -785,6 +785,8 @@ svg {
 .header__buttons {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 0.5rem 0;
 }
 
@@ -914,7 +916,7 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: clamp(0.625rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   font-weight: 400;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -1002,13 +1004,13 @@ svg {
 }
 
 .button-ticket__title {
-  font-size: clamp(1rem, 6vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 3rem);
   font-weight: 300;
   letter-spacing: -0.01em;
 }
 
 .button-ticket__text {
-  font-size: clamp(0.75rem, 3vw, 1.5rem);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   line-height: 132%;
   font-weight: 300;
 }
@@ -1017,7 +1019,7 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  font-size: clamp(0.75rem, 3vw, 1.5rem);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   font-weight: 400;
 }
 
@@ -1033,18 +1035,22 @@ svg {
 }
 
 .button-ticket__price {
-  font-size: clamp(0.75rem, 3vw, 1.375rem);
-  line-height: 138%;
+  font-size: clamp(1rem, 3vw, 1.375rem);
   font-weight: 700;
 }
 
 .button-ticket__booking {
-  line-height: 142%;
   font-weight: 300;
 }
 
+.button-ticket__discount,
+.button-ticket__price,
+.button-ticket__booking {
+  line-height: 138%;
+}
+
 .button-ticket__offer {
-  font-size: clamp(0.625rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 .button-ticket__free {
@@ -1064,9 +1070,14 @@ svg {
 }
 
 .speakers-item__img {
-  flex-shrink: 0;
   width: 9.375rem;
   height: 9.375rem;
+  aspect-ratio: 1/1;
+  flex-shrink: 1;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  border-radius: 0.25rem;
   overflow: hidden;
 }
 
@@ -1074,7 +1085,7 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  scale: 1.01;
 }
 
 .speakers-item__info {
@@ -1105,6 +1116,19 @@ svg {
   text-transform: uppercase;
 }
 
+.speakers-item__badge {
+  align-self: flex-start;
+  font-size: 0.625rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-yellow-soft);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.125rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: var(--color-yellow-soft);
+}
+
 .body-speakers {
   color: var(--color-yellow-soft);
   background-color: var(--color-green-dark);
@@ -1129,6 +1153,18 @@ svg {
 }
 
 @media (max-width: 48rem) {
+  .registration__blocks {
+    grid-template-columns: 1fr;
+  }
+
+  .header__logo {
+    align-self: flex-start;
+  }
+
+  .header__buttons {
+    flex-direction: column-reverse;
+  }
+
   .footer__block--main {
     flex-direction: column;
   }
@@ -1148,6 +1184,17 @@ svg {
 
   .footer__nav {
     padding-right: initial;
+  }
+
+  .speakers-item__blocks {
+    justify-content: initial;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  .speakers__block--items {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

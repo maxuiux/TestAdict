@@ -11,12 +11,16 @@
     &__logo {
         transition: var(--transition-1);
 
-        svg {
-            max-width: rem(206);
-            width: auto;
-            height: rem(38);
+        @include mobile {
+            align-self: flex-start;
         }
-        
+
+        svg {
+            max-width: clamp(rem(130), 20vw, rem(216));
+            width: auto;
+            height: clamp(rem(20), 20vw, rem(38));
+        }
+
         @media (hover: hover) and (pointer: fine) {
 
             &:hover,
@@ -48,7 +52,13 @@
     &__buttons {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         gap: rem(8) 0;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 
     &--color-yellow-soft {

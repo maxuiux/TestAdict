@@ -4,7 +4,11 @@
     &__blocks {
         display: grid;
         grid-template-columns: rem(200) 1fr;
-        gap: 0 6.771vw;
+        gap: 6.771vw;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__info {

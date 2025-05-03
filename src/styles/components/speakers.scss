@@ -29,6 +29,10 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: rem(32) rem(60);
+
+            @include to(rem(400)) {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
 
         &--button {

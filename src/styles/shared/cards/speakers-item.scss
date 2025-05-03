@@ -6,19 +6,29 @@
         display: flex;
         justify-content: space-between;
         gap: rem(16);
+
+        @include mobile {
+            justify-content: initial;
+            flex-direction: column;
+        }
     }
 
     &__img {
-        flex-shrink: 0;
         width: rem(150);
         height: rem(150);
+        aspect-ratio: 1 / 1;
+        flex-shrink: 1;
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        border-radius: rem(4);
         overflow: hidden;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+            scale: 1.01;
         }
     }
 
@@ -48,5 +58,18 @@
         line-height: 135%;
         letter-spacing: -0.01em;
         text-transform: uppercase;
+    }
+
+    &__badge {
+        align-self: flex-start;
+        font-size: rem(10);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--color-yellow-soft);
+        padding: rem(6) rem(12);
+        border-radius: rem(2);
+        border-width: rem(1);
+        border-style: solid;
+        border-color: var(--color-yellow-soft);
     }
 }

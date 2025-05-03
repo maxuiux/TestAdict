@@ -10,13 +10,13 @@
     transition: var(--transition-1);
 
     &__title {
-        font-size: clamp(rem(16), 6vw, rem(48));
+        font-size: clamp(rem(24), 6vw, rem(48));
         font-weight: 300;
         letter-spacing: -0.01em;
     }
 
     &__text {
-        font-size: clamp(rem(12), 3vw, rem(24));
+        font-size: clamp(rem(18), 3vw, rem(24));
         line-height: 132%;
         font-weight: 300;
     }
@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: column;
         gap: rem(12);
-        font-size: clamp(rem(12), 3vw, rem(24));
+        font-size: clamp(rem(18), 3vw, rem(24));
         font-weight: 400;
 
         &-item {
@@ -41,18 +41,22 @@
     }
 
     &__price {
-        font-size: clamp(rem(12), 3vw, rem(22));
-        line-height: 138%;
+        font-size: clamp(rem(16), 3vw, rem(22));
         font-weight: 700;
     }
 
     &__booking {
-        line-height: 142%;
         font-weight: 300;
     }
 
+    &__discount,
+    &__price,
+    &__booking {
+        line-height: 138%;
+    }
+
     &__offer {
-        font-size: clamp(rem(10), 2vw, rem(16));
+        font-size: clamp(rem(14), 2vw, rem(16));
     }
 
     &__free {
