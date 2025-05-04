@@ -43,6 +43,11 @@
     &--md {
         min-height: rem(58);
         padding: rem(19) rem(32);
+
+        @include mobile {
+            padding: rem(16) rem(20);
+            min-height: rem(48);
+        }
     }
 
     &--xlg {

@@ -803,7 +803,6 @@ svg {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-wrap: wrap;
   gap: 0.5rem 0;
 }
 
@@ -1210,14 +1209,6 @@ svg {
     max-width: 11.25rem;
   }
 
-  .header__buttons {
-    flex-direction: column-reverse;
-  }
-
-  .header__buttons .button {
-    align-self: flex-end;
-  }
-
   .footer__block--main {
     flex-direction: column;
   }
@@ -1237,6 +1228,11 @@ svg {
 
   .footer__nav {
     padding-right: initial;
+  }
+
+  .button--md {
+    padding: 1rem 1.25rem;
+    min-height: 3rem;
   }
 
   .speakers-item__blocks {
