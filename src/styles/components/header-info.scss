@@ -15,7 +15,7 @@
     &__text {
         display: grid;
         grid-template-columns: repeat(2, rem(180));
-        font-size: clamp(rem(10), 2vw, rem(16));
+        font-size: clamp(rem(14), 2vw, rem(16));
         line-height: 135%;
         letter-spacing: -0.01em;
         text-transform: uppercase;

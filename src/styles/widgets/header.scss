@@ -16,7 +16,7 @@
         }
 
         svg {
-            max-width: clamp(rem(130), 20vw, rem(216));
+            max-width: clamp(rem(130), 20vw, rem(206));
             width: auto;
             height: clamp(rem(20), 20vw, rem(38));
         }
@@ -42,11 +42,15 @@
     }
 
     &__title {
-        font-size: clamp(rem(10), 2vw, rem(16));
+        font-size: clamp(rem(14), 2vw, rem(16));
         line-height: 135%;
         letter-spacing: -0.01em;
         text-transform: uppercase;
         max-width: rem(280);
+
+        @include mobile {
+            max-width: rem(180);
+        }
     }
 
     &__buttons {
@@ -58,6 +62,12 @@
 
         @include mobile {
             flex-direction: column-reverse;
+        }
+
+        .button {
+            @include mobile {
+                align-self: flex-end;
+            }
         }
     }
 

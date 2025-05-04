@@ -20,9 +20,29 @@
         line-height: 132%;
         font-weight: 300;
 
-        u {
+        a {
             text-decoration: underline solid rem(2);
             text-underline-offset: 0.25rem;
+            transition: var(--transition-1);
+            
+            @media (hover: hover) and (pointer: fine) {
+
+                &:hover,
+                &:focus-visible {
+                    color: var(--color-blue-classic);
+                }
+    
+                &:active {
+                    color: var(--color-orange-bright);
+                }
+            }
+    
+            @media (hover: none) and (pointer: coarse) {
+    
+                &:active {
+                    color: var(--color-orange-bright);
+                }
+            }
         }
     }
 }

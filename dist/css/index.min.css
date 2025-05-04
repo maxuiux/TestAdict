@@ -511,10 +511,11 @@ svg {
 
 .section__blocks {
   display: grid;
-  gap: 4rem;
+  gap: 3.333vw;
 }
 
 .section__blocks--grid-hor-2 {
+  align-items: center;
   grid-template-columns: 26.25rem 1fr;
 }
 
@@ -594,7 +595,7 @@ svg {
 .header-info__text {
   display: grid;
   grid-template-columns: repeat(2, 11.25rem);
-  font-size: clamp(0.625rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   line-height: 135%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -611,12 +612,14 @@ svg {
   height: 15.375rem;
 }
 
-.video img {
-  display: flex;
-  max-width: 100%;
+.anim-decor__wrap {
+  aspect-ratio: 16/8;
+  overflow: hidden;
+}
+
+.anim-decor svg {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: 100%;
 }
 
 .join-us {
@@ -630,9 +633,10 @@ svg {
 }
 
 .the-lineup__transfers p {
-  font-size: clamp(1.125rem, 8vw, 6rem);
+  font-size: clamp(1.125rem, 6vw, 6rem);
   font-weight: 300;
   letter-spacing: -0.03em;
+  text-wrap: nowrap;
 }
 
 .sponsors {
@@ -643,8 +647,9 @@ svg {
 .sponsors__blocks {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem 3.75rem;
-  margin-bottom: 2.5rem;
+  gap: clamp(1rem, 2vw, 3rem) clamp(1.25rem, 2vw, 3.75rem);
+  justify-content: space-between;
+  margin-bottom: clamp(1.25rem, 2vw, 2.5rem);
 }
 
 .sponsors__block {
@@ -722,6 +727,9 @@ svg {
   top: 1.5rem;
   left: 0;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .registration-items {
@@ -748,9 +756,10 @@ svg {
   font-weight: 300;
 }
 
-.registration-item__text u {
+.registration-item__text a {
   text-decoration: underline solid 0.125rem;
   text-underline-offset: 0.25rem;
+  transition: var(--transition-1);
 }
 
 .header {
@@ -769,13 +778,13 @@ svg {
 }
 
 .header__logo svg {
-  max-width: clamp(8.125rem, 20vw, 13.5rem);
+  max-width: clamp(8.125rem, 20vw, 12.875rem);
   width: auto;
   height: clamp(1.25rem, 20vw, 2.375rem);
 }
 
 .header__title {
-  font-size: clamp(0.625rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   line-height: 135%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -945,15 +954,16 @@ svg {
 }
 
 .button--xlg {
-  max-width: 39.375rem;
+  max-width: 32.813vw;
   width: 100%;
-  min-height: 15.125rem;
+  min-height: 12.604vw;
   padding: 1.1875rem 2rem;
   text-transform: unset;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 6vw, 3rem);
   font-weight: 300;
   letter-spacing: -0.01em;
   border-radius: 18.75rem;
+  text-wrap: nowrap;
 }
 
 .button--color-transparent {
@@ -1000,6 +1010,7 @@ svg {
   border-width: 0.125rem;
   border-style: dashed;
   border-color: var(--color-black-soft);
+  user-select: none;
   transition: var(--transition-1);
 }
 
@@ -1152,17 +1163,51 @@ svg {
   border-color: var(--color-yellow-soft);
 }
 
+@media (max-width: 84.25rem) {
+  .section {
+    padding: 2.75rem 0;
+  }
+}
+
 @media (max-width: 48rem) {
+  .section__blocks {
+    gap: 2.5rem;
+  }
+
+  .section__blocks--grid-hor-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .the-lineup__transfers {
+    text-align: right;
+  }
+
+  .sponsors__blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .registration__blocks {
     grid-template-columns: 1fr;
+  }
+
+  .registration__info {
+    gap: 1.25rem;
   }
 
   .header__logo {
     align-self: flex-start;
   }
 
+  .header__title {
+    max-width: 11.25rem;
+  }
+
   .header__buttons {
     flex-direction: column-reverse;
+  }
+
+  .header__buttons .button {
+    align-self: flex-end;
   }
 
   .footer__block--main {
@@ -1199,6 +1244,15 @@ svg {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .registration-item__text a:hover,
+  .registration-item__text a:focus-visible {
+    color: var(--color-blue-classic);
+  }
+
+  .registration-item__text a:active {
+    color: var(--color-orange-bright);
+  }
+
   .header__logo:hover,
   .header__logo:focus-visible {
     color: var(--color-orange-bright);
@@ -1361,6 +1415,10 @@ svg {
 }
 
 @media (hover: none) and (pointer: coarse) {
+  .registration-item__text a:active {
+    color: var(--color-orange-bright);
+  }
+
   .header__logo:active {
     color: var(--color-blue-classic);
   }

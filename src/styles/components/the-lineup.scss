@@ -3,10 +3,15 @@
     background-color: var(--color-pink-light);
 
     &__transfers {
+        @include mobile {
+            text-align: right;
+        }
+
         p {
-            font-size: clamp(rem(18), 8vw, rem(96));
-            font-weight:300;
+            font-size: clamp(rem(18), 6vw, rem(96));
+            font-weight: 300;
             letter-spacing: -0.03em;
+            text-wrap: nowrap;
         }
     }
 }

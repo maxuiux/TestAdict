@@ -1,16 +1,29 @@
 .section {
     padding: rem(80) 0;
 
+    @include tablet {
+        padding: rem(44) 0;
+    }
+
     &__blocks {
         display: grid;
-        gap: rem(64);
+        gap: 3.333vw;
+
+        @include mobile {
+            gap: rem(40);
+        }
 
         &--grid-hor-2 {
+            align-items: center;
             grid-template-columns: rem(420) 1fr;
+
+            @include mobile {
+                grid-template-columns: 1fr;
+            }
 
             .section__block {
                 justify-content: flex-end;
-                
+
                 .button--xlg {
                     margin-left: auto;
                 }

@@ -46,14 +46,15 @@
     }
 
     &--xlg {
-        max-width: rem(630);
+        max-width: 32.813vw;
         width: 100%;
-        min-height: rem(242);
+        min-height: 12.604vw;
         padding: rem(19) rem(32);
         text-transform: unset;
-        font-size: rem(48);
+        font-size: clamp(rem(24), 6vw, rem(48));
         font-weight: 300;
         letter-spacing: -0.01em;
         border-radius: rem(300);
+        text-wrap: nowrap;
     }
 }
