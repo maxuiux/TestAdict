@@ -615,11 +615,19 @@ svg {
 .anim-decor__wrap {
   aspect-ratio: 16/8;
   overflow: hidden;
+  position: relative;
 }
 
 .anim-decor svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
+  scale: 1.001;
 }
 
 .join-us {
