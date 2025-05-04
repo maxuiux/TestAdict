@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             '#anim-decor-square-center',
             {
                 scale: 0.9,
-                rotate: 120,
+                rotate: 140,
                 transformOrigin: '50% 50%',
                 fill: '#FFFF00',
             },

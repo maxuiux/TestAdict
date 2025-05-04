@@ -3,7 +3,7 @@
     background-color: var(--color-pink-light);
 
     &__transfers {
-        @include mobile {
+        @include to(rem(874)) {
             text-align: right;
         }
 

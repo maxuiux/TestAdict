@@ -1,5 +1,9 @@
 .registration {
     padding: rem(80) 0 rem(100);
+    
+    @include tablet {
+        padding: rem(44) 0 rem(80);
+    }
 
     &__blocks {
         display: grid;

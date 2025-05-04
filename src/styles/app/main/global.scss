@@ -17,11 +17,17 @@
             align-items: center;
             grid-template-columns: rem(420) 1fr;
 
-            @include mobile {
+            @include to(rem(874)) {
                 grid-template-columns: 1fr;
             }
 
-            .section__block {
+            .section__block:first-child {
+                @include to(rem(874)) {
+                    max-width: rem(500);
+                }
+            }
+
+            .section__block:last-child {
                 justify-content: flex-end;
 
                 .button--xlg {

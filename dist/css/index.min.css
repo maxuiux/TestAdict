@@ -519,11 +519,11 @@ svg {
   grid-template-columns: 26.25rem 1fr;
 }
 
-.section__blocks--grid-hor-2 .section__block {
+.section__blocks--grid-hor-2 .section__block:last-child {
   justify-content: flex-end;
 }
 
-.section__blocks--grid-hor-2 .section__block .button--xlg {
+.section__blocks--grid-hor-2 .section__block:last-child .button--xlg {
   margin-left: auto;
 }
 
@@ -1174,19 +1174,33 @@ svg {
   .section {
     padding: 2.75rem 0;
   }
+
+  .speakers {
+    padding: 2.75rem 0 5rem;
+  }
+
+  .registration {
+    padding: 2.75rem 0 5rem;
+  }
+}
+
+@media screen and (max-width: 54.625rem) {
+  .section__blocks--grid-hor-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .section__blocks--grid-hor-2 .section__block:first-child {
+    max-width: 31.25rem;
+  }
+
+  .the-lineup__transfers {
+    text-align: right;
+  }
 }
 
 @media (max-width: 48rem) {
   .section__blocks {
     gap: 2.5rem;
-  }
-
-  .section__blocks--grid-hor-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .the-lineup__transfers {
-    text-align: right;
   }
 
   .sponsors__blocks {
@@ -1207,6 +1221,14 @@ svg {
 
   .header__title {
     max-width: 11.25rem;
+  }
+
+  .header__buttons {
+    flex-direction: column-reverse;
+  }
+
+  .header__buttons .button {
+    align-self: flex-end;
   }
 
   .footer__block--main {
