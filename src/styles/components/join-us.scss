@@ -1,4 +1,10 @@
 .join-us {
     color: var(--color-yellow-soft);
     background-color: var(--color-blue-dark);
+    margin-top: rem(-1);
+    padding: rem(81) 0 rem(80);
+
+    @include tablet {
+        padding: rem(45) 0 rem(44);
+    }
 }

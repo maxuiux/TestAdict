@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         scrollTrigger: {
             trigger: '.header-info',
             start: 'top top',
-            scrub: 1.2,
+            scrub: 1.1,
             // optional:
             // end: 'bottom top',
             // markers: true,
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const tlAnimDecorEnd = gsap.timeline({
         scrollTrigger: {
             trigger: '.anim-decor',
-            start: 'top top',
-            scrub: 1.2,
+            start: 'top 20% top',
+            scrub: 1.1,
             // optional:
             // end: 'bottom top',
             // markers: true,
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             '#anim-decor-square-center',
             {
                 scale: 0.9,
-                rotate: 140,
+                rotate: -140,
                 transformOrigin: '50% 50%',
                 fill: '#FFFF00',
             },

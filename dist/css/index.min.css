@@ -633,6 +633,8 @@ svg {
 .join-us {
   color: var(--color-yellow-soft);
   background-color: var(--color-blue-dark);
+  margin-top: -0.0625rem;
+  padding: 5.0625rem 0 5rem;
 }
 
 .the-lineup {
@@ -1173,6 +1175,10 @@ svg {
 @media (max-width: 84.25rem) {
   .section {
     padding: 2.75rem 0;
+  }
+
+  .join-us {
+    padding: 2.8125rem 0 2.75rem;
   }
 
   .speakers {
